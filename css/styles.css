@@ -179,7 +179,7 @@ img {
   letter-spacing: 0.04em;
   color: var(--second-title-color);
   cursor: pointer;
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid transparent;
 }
@@ -190,6 +190,7 @@ img {
 .service-btn:hover,
 .service-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--second-btn-color);
 }
 
 .section-advantages {
@@ -211,6 +212,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--studio-color);
+  border-radius: 4px;
   height: 112px;
 }
 .icon-antenna::before {
@@ -401,6 +403,7 @@ img {
 }
 .wrap-footer {
   display: flex;
+  align-items: baseline;
 }
 .footer-logo {
   text-decoration: none;
@@ -544,12 +547,16 @@ img {
   row-gap: 48px;
   column-gap: 24px;
 }
-.portfolio-picture-item:hover {
+.portfolio-link {
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.portfolio-link {
-  display: inline-block;
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .image {
 }
 .desc-border {
